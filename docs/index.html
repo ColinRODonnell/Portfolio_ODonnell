@@ -1,150 +1,226 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    
-    <head>
-        
-        <title>Index</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        
-        <link rel="stylesheet" type="text/css" href="styling.css" />
-        
-        
-    </head>
-    <body>
-        <figure>
-            <img src="images/behrend.png" width="1250" style="text-align: center;"></img>
-        </figure>
-        
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="interview.html">Interview Story</a>
-            <a href="beacon.html">Beacon Story</a>
-            <a href="https://github.com/ColinRODonnell/COMM260W.git" target="_blank">GitHub</a> 
-        </nav>
-       
-        <hr></hr>  
-        
-        <p id="dateTime"></p>
-        
-        <hr></hr>
-        
-        <figure style="text-align: center;">
-            <h2 style="line-height:1.75;"><b>Today's News</b></h2>
-        </figure>
-        <table border="1" style="vertical-align: top;">
-            <tr>
-                <td><b>Interview with Nicole Conroy</b></td>
-                <td><b>Movie Review of Turbo (2013)</b></td>
-            </tr>
-            <tr>
-                <td>By Colin O'Donnell
-                    
-                    <figure><img src="images/Colin%20ODonnell%20Self%20Portrait%20Final.png" width="350"></img>
-                        <figcaption>Interviewer, Colin Raymond O'Donnell, Junior</figcaption>
-                    </figure>
-                    <h3>Partially Deaf, Her Stories Fully Told: Ms. Conroy’s Journey</h3>
-                    
-                    
-                    <section>Her matte-black hair droops over her shoulders, and three scars mark her pale-skinned figure, with only one ear that picks up the world’s sounds. Yet on Wednesday, on campus, she laughs freely, softly but energetically recounting her stories about sorority life, road trips across the country and her childhood pool parties in Alabama. Her memories reveal the resilience that guided her throughout college and shaped her into the person she is today.<br></br> 
-                        
-                        Nicole Conroy has grown up chasing nature. Her early years were a combination of Hawaii, Washington, Alabama, Colorado and Maryland. Each place molded her in small and significant ways, she said. Road trips around the states transformed into her favorite childhood memories. The wilderness of Wyoming, the sunshine of Florida and the deserts of Arizona left a lasting impact on her love of travel and exploration. Apart from moving often, which might be detrimental for other children, Nicole learned to be strong through new scenery. These qualities that she would carry to future chapters of her life. 
-                        
-                        </section>
-                    <a href="interview.html" target="blank" style="display: block; text-align: center;">
-                        Read More
-                    </a></td>
-                <td>By Colin O'Donnell
-                    <p>MOVIE REVIEW<br></br> 
-                        
-                        <b>“Turbo”: High-Octane Clash Between an Energized Snail &amp; F1 Cars</b><br></br>
-                        
-                        David Soren’s epic tale of an ordinary snail defying all odds<br></br> 
-                        
-                    </p>
-                    <figure>
-                        <img src="images/moviecover.jfif" width="200"></img>
-                        <figcaption>Turbo the Snail and his Crew</figcaption>
-                    </figure>
-                    <br></br>
-                    
-                    <i>Where to Watch: Netflix, Amazon Prime Video ($3.99), VUDU ($7.99)</i><br></br>
-                    <a href="https://www.youtube.com/watch?v=VlRtm8Gh9PQ" target="blank">Watch Trailer</a>
-                    <div>
-                        <p><b>Title:</b> Turbo<br></br>
-                            <b>Director:</b> David Soren<br></br>
-                            <b>Genres:</b> Comedy, Action, Animation<br></br>
-                            <b>MPAA Rating:</b> PG<br></br>
-                            <b>Duration:</b> 1h 36min<br></br>
-                            <b>Producer(s):</b> DreamWorks Animation<br></br></p></div>
-                    <section>Ever dreamt of a turbo-charged snail? Gifted the powers of nitrous, Theo the Snail competes against lightning-fast F1 race cars. Nicknamed Turbo, the slimy specimen is about to redefine what it means to go at a ‘snail’s pace.’ “Turbo” boasts constant action and spectacular visuals that make the audience jump out of their shells. Additionally, with “Turbo’s” status as a classic children’s movie, the viewer is absorbed by a sense of nostalgia. This review will dive into what makes the movie “Turbo” so enjoyable.<br></br> 
-                        
-                        </section>
-                    <a href="beacon.html" target="blank" style="display: block; text-align: center;">
-                        Read More
-                    </a></td> 
-                        
-         
-            </tr>
-        </table>
-        <script>
-  const today = new Date();
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Rivera — Robotics &amp; AI Engineer</title>
+<meta name="description" content="Robotics and AI engineer building software for machines that work in the real world.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
+<a class="skip" href="#main">Skip to content</a>
 
-  const dayName = days[today.getDay()];
-  const monthName = months[today.getMonth()];
-  const date = today.getDate();
-  const year = today.getFullYear();
+<header class="topbar">
+  <a class="wordmark" href="#top">alex<span>.rivera</span></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav">
+    <a href="#about">About</a>
+    <a href="#work">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="#" download>Résumé</a>
+  </nav>
+</header>
 
-  document.getElementById("dateOutput").innerText =
-    `${dayName}, ${monthName} ${date}, ${year}`;
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="hand">Hello —</p>
+      <h1>I'm Alex, and I write the software that makes robots behave.</h1>
+      <p class="lede">
+        Robotics and AI engineer, master's in robotics, four years shipping control stacks,
+        perception pipelines and ROS 2 systems for machines that have to work outdoors,
+        on time, without a laptop attached. I garden badly and watch too many films.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">See what I've built</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <figure class="portrait">
+      <img src="portrait.jpg" alt="Alex Rivera">
+      <figcaption>Denver, Colorado</figcaption>
+    </figure>
+
+    <p class="scroll-cue">Scroll</p>
+  </section>
+
+  <!-- AVAILABILITY -->
+  <aside class="status">
+    <span class="dot" aria-hidden="true"></span>
+    Open to contract and full-time roles in robotics, ML, reinforcement learning and vision.
+  </aside>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About</h2>
+    <div class="about-grid">
+      <p class="about-lead">
+        I work at the seam where learning meets hardware: behaviour trees that call a language model,
+        motor drivers that have to answer in under a millisecond, and everything in between that keeps
+        the two talking.
+      </p>
+      <dl class="facts">
+        <div><dt>Focus</dt><dd>ROS 2, control, embedded systems, applied ML</dd></div>
+        <div><dt>Research</dt><dd>Multi-agent control — two published papers</dd></div>
+        <div><dt>Toolbox</dt><dd>C++, Python, Docker, micro-ROS, PyTorch, Gazebo</dd></div>
+        <div><dt>Based in</dt><dd>Denver, open to remote and relocation</dd></div>
+      </dl>
+    </div>
+
+    <ul class="awards">
+      <li><strong>Robotics Fellowship</strong><span>National Robotics Institute, 2023</span></li>
+      <li><strong>Best Paper, Field Robotics track</strong><span>ICRA Workshop, 2024</span></li>
+      <li><strong>Finalist, National Design Challenge</strong><span>Team of four, 2022</span></li>
+    </ul>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="work" id="work">
+    <h2>Experience</h2>
+    <ol class="timeline">
+
+      <li class="job">
+        <p class="when">Mar 2025 — present</p>
+        <div class="job-body">
+          <h3>Robotics Software Engineer</h3>
+          <p class="where">Northline Robotics · Denver</p>
+          <ul>
+            <li>Built the behaviour engine for a humanoid platform — lifecycle nodes, swappable actions, a language model in the decision loop.</li>
+            <li>Brought up a micro-ROS stack on a Teensy 4.0 and drove the wheel motors over RS-485.</li>
+            <li>Added per-node health monitoring, which turned week-long debugging hunts into afternoon ones.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <p class="when">May 2024 — Oct 2024</p>
+        <div class="job-body">
+          <h3>Robotics Software Engineer</h3>
+          <p class="where">Fieldwork Agritech · Phoenix</p>
+          <ul>
+            <li>Spent two months on-site as the only engineer, taking a prototype harvester from demo to field trials.</li>
+            <li>Tuned a GPS-and-encoder Kalman filter down to sub-centimetre positioning between crop rows.</li>
+            <li>Collected field data and retrained detection models that kept working at dawn and under glare.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <p class="when">May 2023 — Aug 2023</p>
+        <div class="job-body">
+          <h3>Solutions Architect Intern</h3>
+          <p class="where">Silverwave Systems · San Jose</p>
+          <ul>
+            <li>Built a self-balancing robot from CAD to controller as a reference design for the sales team.</li>
+            <li>Ported the control policy from TensorFlow onto a neuromorphic inference chip.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <p class="when">May 2020 — Aug 2020</p>
+        <div class="job-body">
+          <h3>Embedded Software Intern</h3>
+          <p class="where">University Robotics Lab</p>
+          <ul>
+            <li>One of 95 students selected from a national cohort for the summer research programme.</li>
+            <li>Led three teammates on a fiducial-marker localisation module and its automated test harness.</li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+
+      <a class="project" href="#">
+        <h3>Object-goal navigation, rebuilt</h3>
+        <p>Semantic mapping plus a learned exploration policy, so the robot searches a building the way a person would rather than sweeping it.</p>
+        <ul class="tags"><li>Path planning</li><li>Vision</li><li>RL</li><li>Simulation</li></ul>
+      </a>
+
+      <a class="project" href="#">
+        <h3>Model-predictive control for an omni-wheel base</h3>
+        <p>Trajectory optimisation for a four-wheel omnidirectional platform, compared against a gradient-descent baseline on the same track.</p>
+        <ul class="tags"><li>Python</li><li>MPC</li><li>Optimisation</li></ul>
+      </a>
+
+      <a class="project" href="#">
+        <h3>Cup-stacking arm</h3>
+        <p>Fine-tuned an imitation-learning policy on a low-cost six-axis arm over a weekend hackathon. It stacks five cups out of six.</p>
+        <ul class="tags"><li>Imitation learning</li><li>ROS 2</li><li>Jetson</li></ul>
+      </a>
+
+      <a class="project" href="#">
+        <h3>Language-model driver in simulation</h3>
+        <p>A planner that hands natural-language driving intent to a language model and converts its output into throttle and steering inside a driving simulator.</p>
+        <ul class="tags"><li>LLM</li><li>Autonomy</li><li>Simulation</li></ul>
+      </a>
+
+      <a class="project" href="#">
+        <h3>Vision-tracking mini drone</h3>
+        <p>A palm-sized quadcopter that follows a marker using onboard vision and a model-based control design, built and tested in MATLAB.</p>
+        <ul class="tags"><li>Sensor fusion</li><li>Kalman filter</li><li>MATLAB</li></ul>
+      </a>
+
+      <a class="project" href="#">
+        <h3>Speech in, speech out</h3>
+        <p>A containerised ROS 2 pipeline: speech to text, text through a local language model, answer back out as synthesised speech. Runs offline on one GPU.</p>
+        <ul class="tags"><li>Docker</li><li>ROS 2</li><li>Whisper</li><li>TTS</li></ul>
+      </a>
+
+    </div>
+
+    <p class="resume-line"><a href="#" download>Take a copy of my résumé</a></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p class="contact-lead">Got something that needs to move, sense or decide? Tell me about it.</p>
+    <a class="mail" href="mailto:hello@example.com">hello@example.com</a>
+    <ul class="social">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Google Scholar</a></li>
+      <li><a href="#">Bluesky</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Alex Rivera</p>
+  <p>Robotics · AI · things that roll away when you stop watching</p>
+</footer>
+
+<script>
+  const btn = document.querySelector('.menu-btn');
+  const nav = document.getElementById('nav');
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    nav.classList.toggle('open', !open);
+  });
+  nav.addEventListener('click', e => {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
 </script>
-        <script>
-  function updateDateTime() {
-    const now = new Date();
 
-    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    const months = [
-      "January","February","March","April","May","June",
-      "July","August","September","October","November","December"
-    ];
-
-    const dayName = days[now.getDay()];
-    const monthName = months[now.getMonth()];
-    const date = now.getDate();
-    const year = now.getFullYear();
-
-    // EST time (America/New_York automatically handles EST/EDT)
-    const time = now.toLocaleTimeString("en-US", {
-      timeZone: "America/New_York",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit"
-    });
-
-    document.getElementById("dateTime").innerText =
-      `${dayName}, ${monthName} ${date}, ${year} — ${time} EST`;
-  }
-
-  updateDateTime();
-  setInterval(updateDateTime, 1000);
-</script>
-        <footer>
-            <h3><b>Contacts</b> 
-            </h3>
-            
-            Phone: (814)-790-0029<br></br>
-            Email: cro5191@psu.edu <br></br>
-            LinkedIn: <a href="https://www.linkedin.com/in/colin-o-donnell-767865351/" target="_blank">view here</a> 
-            
-        </footer>
-        
-    </body>
-    
+</body>
 </html>
