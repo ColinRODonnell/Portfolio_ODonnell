@@ -1,1 +1,1 @@
-News Website for COMM 260W
+Colin R. O'Donnell's Project Website. 
